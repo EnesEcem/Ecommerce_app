@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import '../../../../model/ad_banner.dart';
-import 'banner_card.dart';
+import 'package:ecommerce_app/model/ad_banner.dart';
+import 'package:ecommerce_app/view/home/components/carousel_slider/banner_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
