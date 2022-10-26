@@ -1,9 +1,10 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ecommerce_app/component/main_header.dart';
 import 'package:ecommerce_app/controller/controllers.dart';
 import 'package:ecommerce_app/view/home/components/popular_category/popular_category.dart';
-import 'package:ecommerce_app/view/home/components/section_title.dart';
+import 'package:ecommerce_app/view/home/components/popular_category/section_title.dart';
 
 import 'components/carousel_slider/carousel_slider_view.dart';
 import 'components/popular_category/popular_category_loading.dart';
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
         child: Column(
       children: [
-        const MainHeader(),
+        AppBar(title: Text("Welcome")),
         Obx(() {
           if (homeController.bannerList.isNotEmpty) {
             return CarouselSliderView(bannerList: homeController.bannerList);
@@ -25,7 +26,7 @@ class HomeScreen extends StatelessWidget {
             return const CarouselLoading();
           }
         }),
-        const SectionTitle(title: "Popular Category"),
+        SectionTitle(title: "Popular Category"),
         Obx(() {
           if (homeController.popularCategoryList.isNotEmpty) {
             return PopularCategory(

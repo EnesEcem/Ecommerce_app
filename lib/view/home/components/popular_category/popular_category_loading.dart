@@ -9,7 +9,6 @@ class PopularCategoryLoading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 475,
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       child: ListView.builder(
           scrollDirection: Axis.vertical,

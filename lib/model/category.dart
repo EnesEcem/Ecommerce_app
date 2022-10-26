@@ -1,10 +1,9 @@
 import 'dart:convert';
 
 List<Category> popularCategoryListFromJson(String val) =>
-    List<Category>.from(json.decode(val)['data']
-        .map((category) => Category.popularCategoryFromJson(category))
-    );
-
+    List<Category>.from(json
+        .decode(val)['data']
+        .map((category) => Category.popularCategoryFromJson(category)));
 
 class Category {
   final int id;

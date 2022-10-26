@@ -10,7 +10,7 @@ class BannerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.all(10),
+      margin: EdgeInsets.all(10),
       child: ClipRRect(
         borderRadius: const BorderRadius.all(Radius.circular(10)),
         child: CachedNetworkImage(

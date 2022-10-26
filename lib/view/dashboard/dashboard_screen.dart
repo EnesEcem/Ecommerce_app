@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/component/main_header.dart';
+import 'package:ecommerce_app/view/category/category_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:get/get.dart';
@@ -16,9 +18,7 @@ class DashboardScreen extends StatelessWidget {
             index: controller.tabIndex,
             children: [
               const HomeScreen(),
-              Container(
-                color: Colors.red,
-              ),
+              CategoryScreen(),
               Container(
                 color: Colors.blue,
               ),
@@ -39,7 +39,7 @@ class DashboardScreen extends StatelessWidget {
             behaviour: SnakeBarBehaviour.floating,
             snakeShape: SnakeShape.circle,
             padding: EdgeInsets.symmetric(vertical: 5),
-            unselectedLabelStyle: TextStyle(fontSize: 11),
+            unselectedLabelStyle: TextStyle(fontSize: 10),
             snakeViewColor: Theme.of(context).primaryColor,
             unselectedItemColor: Theme.of(context).colorScheme.secondary,
             showUnselectedLabels: true,

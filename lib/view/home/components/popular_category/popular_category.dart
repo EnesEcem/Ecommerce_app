@@ -8,15 +8,17 @@ class PopularCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 475,
-      padding: const EdgeInsets.only(right: 10),
-      child: ListView.builder(
-          scrollDirection: Axis.vertical,
-          physics: const BouncingScrollPhysics(),
-          itemCount: categories.length,
-          itemBuilder: (context, index) =>
-              PopularCategoryCard(category: categories[index])),
+    return Expanded(
+      child: Container(
+        height: double.infinity,
+        padding: const EdgeInsets.only(right: 10),
+        child: ListView.builder(
+            scrollDirection: Axis.vertical,
+            physics: BouncingScrollPhysics(),
+            itemCount: categories.length,
+            itemBuilder: (context, index) =>
+                PopularCategoryCard(category: categories[index])),
+      ),
     );
   }
 }
