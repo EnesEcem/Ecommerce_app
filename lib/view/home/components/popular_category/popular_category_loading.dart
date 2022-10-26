@@ -9,11 +9,11 @@ class PopularCategoryLoading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 140,
-      padding: const EdgeInsets.only(right: 10),
+      height: 475,
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          physics: const BouncingScrollPhysics(),
+          scrollDirection: Axis.vertical,
+          physics: BouncingScrollPhysics(),
           itemCount: 5,
           itemBuilder: (context, index) => const PopularCategoryLoadingCard()),
     );

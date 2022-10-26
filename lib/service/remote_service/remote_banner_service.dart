@@ -1,5 +1,5 @@
-import '../../const.dart';
 import 'package:http/http.dart' as http;
+import 'package:ecommerce_app/const.dart';
 
 class RemoteBannerService {
   var client = http.Client();

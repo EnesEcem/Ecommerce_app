@@ -7,7 +7,7 @@ class PopularCategoryLoadingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(10, 10, 5, 10),
+      padding: EdgeInsets.fromLTRB(10, 10, 5, 10),
       child: Material(
         elevation: 8,
         shadowColor: Colors.grey.shade300,
@@ -19,9 +19,8 @@ class PopularCategoryLoadingCard extends StatelessWidget {
             width: 270,
             height: 140,
             decoration: BoxDecoration(
-              color: Colors.grey.shade300,
-              borderRadius: BorderRadius.circular(10)
-            ),
+                color: Colors.grey.shade300,
+                borderRadius: BorderRadius.circular(10)),
           ),
         ),
       ),

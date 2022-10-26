@@ -1,7 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:ecommerce_app/const.dart';
 import 'package:ecommerce_app/model/category.dart';
-import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
 class PopularCategoryCard extends StatelessWidget {
@@ -21,17 +22,17 @@ class PopularCategoryCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           child: Container(
             width: 270,
-            height: 140,
+            height: 240,
             decoration: BoxDecoration(
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(10),
                 image:
                     DecorationImage(image: imageProvider, fit: BoxFit.cover)),
             child: Padding(
-              padding: const EdgeInsets.all(10),
+              padding: EdgeInsets.all(10),
               child: Text(
                 category.name,
-                style: const TextStyle(
+                style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
@@ -48,7 +49,7 @@ class PopularCategoryCard extends StatelessWidget {
             highlightColor: Colors.white,
             child: Container(
               width: 270,
-              height: 140,
+              height: 240,
               decoration: BoxDecoration(
                   color: Colors.grey.shade300,
                   borderRadius: BorderRadius.circular(10)),
@@ -61,11 +62,11 @@ class PopularCategoryCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           child: Container(
             width: 270,
-            height: 140,
+            height: 240,
             decoration: BoxDecoration(
                 color: Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(10)),
-            child: const Center(
+            child: Center(
               child: Icon(
                 Icons.error_outline,
                 color: Colors.grey,

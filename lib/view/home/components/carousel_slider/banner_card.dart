@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:ecommerce_app/const.dart';
 import 'package:flutter/material.dart';
+import 'package:ecommerce_app/const.dart';
 import 'package:shimmer/shimmer.dart';
 
 class BannerCard extends StatelessWidget {

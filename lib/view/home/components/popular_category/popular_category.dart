@@ -1,6 +1,6 @@
-import 'package:ecommerce_app/model/category.dart';
 import 'package:flutter/material.dart';
-import 'popular_category_card.dart';
+import 'package:ecommerce_app/model/category.dart';
+import 'package:ecommerce_app/view/home/components/popular_category/popular_category_card.dart';
 
 class PopularCategory extends StatelessWidget {
   final List<Category> categories;
@@ -9,10 +9,10 @@ class PopularCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 140,
+      height: 475,
       padding: const EdgeInsets.only(right: 10),
       child: ListView.builder(
-          scrollDirection: Axis.horizontal,
+          scrollDirection: Axis.vertical,
           physics: const BouncingScrollPhysics(),
           itemCount: categories.length,
           itemBuilder: (context, index) =>

@@ -1,5 +1,3 @@
-import 'home_controller.dart';
-import 'product_controller.dart';
+import 'package:ecommerce_app/controller/home_controller.dart';
 
 HomeController homeController = HomeController.instance;
-ProductController productController = ProductController.instance;
